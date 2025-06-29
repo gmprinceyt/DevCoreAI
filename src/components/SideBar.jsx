@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const SideBar = ({ DarkModeToggle, DarkMode }) => {
   return (
-    <div className={`${DarkMode ? 'border-gray-800' : 'border-gray-200'} p-3 w-1/6 border-r-1 `}>
+    <div className={`p-3 w-1/6 ${DarkMode ? 'bg-[#1E2939]' : 'bg-[#E5E7EB]'}`}>
       <Link to={"/"} className="flex gap-1.5 items-center ">
         <img src="copilot-icon.svg" alt="logo" className="w-9 h-9" />
         <span className={` tracking-widest font-bold logo-name ${DarkMode ? 'text-white': 'text-black' }`}>

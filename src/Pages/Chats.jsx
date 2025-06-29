@@ -66,7 +66,7 @@ Suggest simple projects or practice questions to try
   return (
     <div
       className={`w-full  flex h-dvh max-w-[1440px] m-auto overflow-hidden  ${
-        DarkMode ? "bg-black text-white" : "bg-white text-black"
+        DarkMode ? "bg-[#1E2939] text-white" : "bg-[#E5E7EB] text-black"
       } `}
     >
       <SideBar DarkMode={DarkMode} DarkModeToggle={DarkModeToggle} />
