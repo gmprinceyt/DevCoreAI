@@ -73,10 +73,12 @@ Suggest simple projects or practice questions to try
   }
 
   function newchat() {
-    SetResponse(`👋 Welcome to DevCore
+    SetResponse(`New 👋 Welcome to DevCore
 🚀 Your AI Coding Mentor – Learn Web Development & DSA from Scratch to Job-Ready!
 💬 Ask me anything in Hindi or English`);
-SetText("")
+    SetText("");
+    SetNewChat(false);
+    setTimeout(() => SetNewChat(true), 1000); // 1s
   }
 
   return (
@@ -93,8 +95,7 @@ SetText("")
         DarkModeToggle={DarkModeToggle}
         newchat={newchat}
         NewChat={NewChat}
-        SetNewChat={SetNewChat}
-      />
+     />
       <div className="flex-1 relative overflow-y-auto">
         <Message
           Text={Text}

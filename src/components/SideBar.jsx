@@ -6,7 +6,7 @@ import { MdDarkMode } from "react-icons/md";
 import { RxReset } from "react-icons/rx";
 import { Link } from "react-router";
 
-const SideBar = ({ DarkModeToggle, DarkMode, Copy, SetCopy, Response, SetNewChat, NewChat, newchat }) => {
+const SideBar = ({ DarkModeToggle, DarkMode, Copy, SetCopy, Response,  NewChat, newchat }) => {
 
 
 
