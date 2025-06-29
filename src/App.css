@@ -16,6 +16,7 @@
 .logo-name {
     font-family: "Pacifico" ,sans-serif;
     cursor: pointer;
+    /* background-color: ; */
 }
 
 .grow ul:hover {
@@ -32,7 +33,11 @@
 
 .heading {
     color: aqua;
+    text-shadow:   0 0 10px rgba(0, 255, 255, 0.281),
+    0 0 60px aqua;
 }
+
+
 
 .button-start:hover {
     box-shadow:  0 0 10px 0px rgba(255, 0, 128, 0.2)
@@ -42,12 +47,30 @@
     color: #fff;
     outline: 2px solid #fff;
 }
-.button-start:active {
-    scale: 1.05;
-    outline: 2px solid #fff;
-}
 
 .loader {
     border: 10px solid #fff;
     border-top: 10px solid purple;
+}
+
+.output::-webkit-scrollbar{
+    display: none; 
+}
+
+
+li ul:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.fade-line {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
