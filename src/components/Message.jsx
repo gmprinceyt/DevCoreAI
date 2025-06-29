@@ -1,6 +1,7 @@
 import { BiBot } from "react-icons/bi";
 import formatAnyText from "../../utills/formatAnyText.";
-const Message = ({ DarkMode, Response }) => {
+import ChatLoading from "./ChatLoading";
+const Message = ({ DarkMode, Response, Loading, }) => {
   const html = formatAnyText(Response);
 
   return (
@@ -11,16 +12,25 @@ const Message = ({ DarkMode, Response }) => {
      
       `}
     >
-      <ul className={`mb-2 p-3 rounded-2xl h-full flex justify-start ${DarkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>
+      <ul
+        className={`mb-2 p-3 rounded-2xl   overflow-y-auto flex justify-start ${
+          DarkMode ? "bg-gray-700" : "bg-gray-200"
+        }`}
+      >
         <li
           className={` rounded-lg  p-3 shadow-md w-full ${
             DarkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-black"
           }`}
         >
-          <span className="text-2xl text-purple-700"><BiBot /></span>
-          <div
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <span className="text-2xl text-purple-700 flex gap-2 items-center mb-5">
+            <span className="text-xs font-semibold bg-purple-400 rounded-3xl p-3">
+              Your Answer Here Below
+            </span>
+            <BiBot />
+          </span>
+          
+        <ChatLoading html={html} Loading={Loading} /> 
+        
         </li>
       </ul>
     </div>

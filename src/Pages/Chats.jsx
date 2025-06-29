@@ -7,12 +7,19 @@ import { GoogleGenAI } from "@google/genai";
 const Chats = () => {
   const [DarkMode, SetDarkMode] = useState(true);
   const [Text, SetText] = useState("");
-  const [Response, SetResponse] = useState("");
+  const [Response, SetResponse] = useState(`👋 Welcome to DevCore
+🚀 Your AI Coding Mentor – Learn Web Development & DSA from Scratch to Job-Ready!
+💬 Ask me anything in Hindi or English`);
+  const [NewChat, SetNewChat] = useState(true);
+  const [Loading, setLoading] = useState(false);
+  const [Copy, SetCopy] = useState(true);
 
   const ai = new GoogleGenAI({
     apiKey: " AIzaSyAvPlzZQs-pnNfYgjt5c6ynYpR-t-jERxE ",
   });
+
   async function main() {
+    setLoading(true);
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
       contents: Text,
@@ -57,26 +64,50 @@ Suggest simple projects or practice questions to try
       `,
       },
     });
+    setLoading(false);
     SetResponse(response.text);
   }
 
   function DarkModeToggle() {
     SetDarkMode(!DarkMode);
   }
+
+  function newchat() {
+    SetResponse(`👋 Welcome to DevCore
+🚀 Your AI Coding Mentor – Learn Web Development & DSA from Scratch to Job-Ready!
+💬 Ask me anything in Hindi or English`);
+SetText("")
+  }
+
   return (
     <div
       className={`w-full  flex h-dvh max-w-[1440px] m-auto overflow-hidden  ${
         DarkMode ? "bg-[#1E2939] text-white" : "bg-[#E5E7EB] text-black"
       } `}
     >
-      <SideBar DarkMode={DarkMode} DarkModeToggle={DarkModeToggle} />
+      <SideBar
+        Response={Response}
+        SetCopy={SetCopy}
+        Copy={Copy}
+        DarkMode={DarkMode}
+        DarkModeToggle={DarkModeToggle}
+        newchat={newchat}
+        NewChat={NewChat}
+        SetNewChat={SetNewChat}
+      />
       <div className="flex-1 relative overflow-y-auto">
         <Message
           Text={Text}
           Response={Response}
           DarkMode={DarkMode}
+          Loading={Loading}
         />
-        <ChatInput main={main} SetText={SetText} DarkMode={DarkMode} />
+        <ChatInput
+          main={main}
+          SetText={SetText}
+          DarkMode={DarkMode}
+          Text={Text}
+        />
       </div>
     </div>
   );

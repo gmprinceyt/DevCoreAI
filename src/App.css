@@ -1,65 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Pacifico&display=swap');@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Pacifico&display=swap");
+@import "tailwindcss";
 
 * {
-    font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
 }
 
 .main {
-    background:
-        radial-gradient(circle at 80% 80%, rgba(203, 104, 255, 0.4), transparent 60%),
-        radial-gradient(circle at 20% 20%, rgba(255, 0, 128, 0.2), transparent 60%),
-        radial-gradient(circle at 50% 50%, rgba(0, 180, 255, 0.15), transparent 50%),
-        #0f0f10;
+  background: radial-gradient(
+      circle at 80% 80%,
+      rgba(203, 104, 255, 0.4),
+      transparent 60%
+    ),
+    radial-gradient(circle at 20% 20%, rgba(255, 0, 128, 0.2), transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(0, 180, 255, 0.15), transparent 50%),
+    #0f0f10;
 }
 
 .logo-name {
-    font-family: "Pacifico" ,sans-serif;
-    cursor: pointer;
-    /* background-color: ; */
+  font-family: "Pacifico", sans-serif;
+  cursor: pointer;
+  /* background-color: ; */
 }
 
 .grow ul:hover {
-    color: #fff;
-    text-shadow:  0 0 1px #fff, 
-    0 0 2px #fff ,
-    0 0 8px #fff ,
-    0 0 15px purple,
-    0 0 20px red,
-    0 0 25px blue,
-    0 0 50px yellow,
-    0 0 100px salmon;
+  color: #fff;
+  text-shadow: 0 0 60px rgb(163, 37, 146);
 }
 
 .heading {
-    color: aqua;
-    text-shadow:   0 0 10px rgba(0, 255, 255, 0.281),
-    0 0 60px aqua;
+  color: aqua;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.281), 0 0 60px aqua;
 }
 
-
-
 .button-start:hover {
-    box-shadow:  0 0 10px 0px rgba(255, 0, 128, 0.2)
-    , 0 0 20px 0 rgba(203, 104, 255, 0.4),
-    0 0 30px 0 rgba(0, 180, 255, 0.15);
-    background-color: #000;
-    color: #fff;
-    outline: 2px solid #fff;
+  box-shadow: 0 0 10px 0px rgba(255, 0, 128, 0.2),
+    0 0 20px 0 rgba(203, 104, 255, 0.4), 0 0 30px 0 rgba(0, 180, 255, 0.15);
+  background-color: #000;
+  color: #fff;
+  outline: 2px solid #fff;
 }
 
 .loader {
-    border: 10px solid #fff;
-    border-top: 10px solid purple;
+  border: 10px solid #fff;
+  border-top: 10px solid purple;
 }
 
-.output::-webkit-scrollbar{
-    display: none; 
+.output::-webkit-scrollbar {
+  display: none;
 }
-
 
 li ul:hover {
-    border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .fade-line {
@@ -72,5 +64,32 @@ li ul:hover {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/*loading animation */
+
+.typing-animation {
+  font-family: "Pacifico", sans-serif;
+}
+
+.typing-animation::after {
+  content: "";
+  display: inline-block;
+  animation: dots 1s steps(3, end) infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
   }
 }
