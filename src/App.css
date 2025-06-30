@@ -93,3 +93,66 @@ li ul:hover {
     content: "...";
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Querys  */
+
+@media only screen  and (min-width: 200px) and (max-width: 575px){
+  .section-main {
+    padding: 1rem;
+  }
+  .heading-name {
+    width: 100%;
+    font-size: 2.2rem;
+    line-height: 2rem;
+  }
+
+  .discription{
+    width: 100%;
+    font-size: 0.7rem;
+  }
+  .aside {
+    width: 100%;
+    position: absolute;
+    top: 24px; 
+    left: 50%;
+    display: flex;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    font-size: 0rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6666;
+  }
+
+  .newchat {
+    margin-top: 0.5rem;
+  }
+
+  .chats {
+    margin-top: 3rem;
+  }
+
+  .input {
+    width: 95%;
+  }
+}

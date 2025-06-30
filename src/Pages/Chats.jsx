@@ -96,7 +96,7 @@ Suggest simple projects or practice questions to try
         newchat={newchat}
         NewChat={NewChat}
      />
-      <div className="flex-1 relative overflow-y-auto">
+      <div className="flex-1 relative overflow-y-auto chats ">
         <Message
           Text={Text}
           Response={Response}

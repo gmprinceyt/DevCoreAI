@@ -12,7 +12,7 @@ const Header = () => {
               DevCore
             </span>
           </Link>
-          <li className="flex gap-10 list-none grow  items-center justify-center text-sm">
+          <li className="flex gap-10 list-none grow items-center  justify-center text-sm">
             <ul className="text-2xl">
               <Link to={"/"}>
                 <FaHome />

@@ -7,7 +7,7 @@ const Message = ({ DarkMode, Response, Loading, }) => {
   return (
     <div
       className={`w-full h-full m-auto  rounded-md  overflow-y-auto p-5 backdrop-blur-2xl   max-w-[1080px] ${
-        DarkMode ? "bg-[#00000030] text-white  " : "bg-[#ffffff]  text-black"
+        DarkMode ? "bg-[#00000030] text-white  " : "bg-[#ffffff]  text-black "
       }
      
       `}

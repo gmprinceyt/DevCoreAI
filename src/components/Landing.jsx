@@ -7,7 +7,7 @@ const Landing = (props) => {
         <p className="text-xs px-5 py-1 text-white font-bold mb-1 bg-purple-500 rounded ">
           AI Tools
         </p>
-        <h1 className="w-[60%] text-5xl text-center text-white font-bold leading-13 ">
+        <h1 className="w-[60%] text-5xl heading-name text-center text-white font-bold leading-13 ">
           🧠 Meet Your AI Coding Teacher –{" "}
           <span className="heading">Dev Core. </span>{" "}
           <br/>
@@ -43,7 +43,7 @@ const Landing = (props) => {
             </defs>
           </svg>
         </div>
-        <p className="text-gray-300 w-[60%] text-center mt-5 font-semibold">
+        <p className="text-gray-300 w-[60%] discription text-center mt-5 font-semibold">
           🌟 Your friendly mentor to learn Web Development & DSA from zero to
           job-ready level. 📘 Learn step-by-step with simple words, code
           examples, real-life analogies, and daily practice. 💡 Whether you're
