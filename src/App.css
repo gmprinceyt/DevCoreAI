@@ -133,7 +133,7 @@ li ul:hover {
   .aside {
     width: 100%;
     position: absolute;
-    top: 24px; 
+    top: 20px; 
     left: 50%;
     display: flex;
     transform: translate(-50%,-50%);
@@ -141,7 +141,7 @@ li ul:hover {
     font-size: 0rem;
     justify-content: space-between;
     align-items: center;
-    background-color: #6666;
+    background-color: transparent;
   }
 
   .newchat {
@@ -154,5 +154,8 @@ li ul:hover {
 
   .input {
     width: 95%;
+  }
+  .text{
+    font-size: 0rem;
   }
 }

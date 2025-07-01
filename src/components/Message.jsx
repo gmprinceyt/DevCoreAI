@@ -1,8 +1,6 @@
 import { BiBot } from "react-icons/bi";
-import formatAnyText from "../../utills/formatAnyText.";
 import ChatLoading from "./ChatLoading";
 const Message = ({ DarkMode, Response, Loading, }) => {
-  const html = formatAnyText(Response);
 
   return (
     <div
@@ -29,7 +27,7 @@ const Message = ({ DarkMode, Response, Loading, }) => {
             <BiBot />
           </span>
           
-        <ChatLoading html={html} Loading={Loading} /> 
+        <ChatLoading DarkMode={DarkMode} text={Response} Loading={Loading} /> 
         
         </li>
       </ul>

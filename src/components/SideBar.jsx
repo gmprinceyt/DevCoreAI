@@ -39,24 +39,24 @@ const SideBar = ({
         onClick={() => {
           newchat();
         }}
-        className={`flex px-3 newchat rounded-md shadow py-2 gap-1 justify-start  items-center cursor-pointer  mt-6 ${
+        className={`flex px-3 newchat  rounded-md shadow py-2 gap-1 justify-start  items-center cursor-pointer  mt-6 ${
           DarkMode ? "bg-black" : "bg-white"
         }`}
       >
         <span className="text-2xl">{NewChat ? <GrNew /> : <RxReset />}</span>
-        <span className="text-xs"> {`${NewChat ? "NewChat" : "Started"}`}</span>
+        <span className="text-xs text"> {`${NewChat ? "NewChat" : "Started"}`}</span>
       </div>
       {/* DarkMode Button  */}
       <div
         onClick={DarkModeToggle}
-        className={`flex px-3 rounded-md shadow py-2 gap-1 justify-start  items-center cursor-pointer  mt-2 ${
+        className={`flex px-3 rounded-md   shadow py-2 gap-1 justify-start  items-center cursor-pointer  mt-2 ${
           DarkMode ? "bg-black" : "bg-white"
         }`}
       >
         <span className="text-2xl">
           {DarkMode ? <CiLight /> : <MdDarkMode />}
         </span>
-        <span className="text-xs">
+        <span className="text-xs text">
           {" "}
           {`${DarkMode ? "LightMode" : "DarkMode"}`}
         </span>
@@ -66,12 +66,12 @@ const SideBar = ({
         onClick={() => {
           CopyText(Response);
         }}
-        className={`flex px-3 rounded-md shadow py-2 gap-1 justify-start  items-center cursor-pointer  mt-2 ${
+        className={`flex px-3 rounded-md shadow py-2  gap-1 justify-start  items-center cursor-pointer  mt-2 ${
           DarkMode ? "bg-black" : "bg-white"
         }`}
       >
         <span className="text-2xl">{Copy ? <BiCopy /> : <FcCheckmark />}</span>
-        <span className="text-xs"> {`${Copy ? "Copy" : "Copied"}`}</span>
+        <span className="text-xs text"> {`${Copy ? "Copy" : "Copied"}`}</span>
       </div>
     </aside>
   );

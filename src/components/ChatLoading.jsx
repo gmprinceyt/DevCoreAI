@@ -1,13 +1,14 @@
+import FormattedOutput from "./FormattedOutput";
 
-const ChatLoading = ({ Loading, html }) => {
+const ChatLoading = ({ Loading, text , DarkMode}) => {
   return (
     <>
       {Loading ? (
         <div className="typing-animation text-purple-400 font-semibold  ">
-          DevCore is Typing...
+         Deep Thinking...
         </div>
       ) : (
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <FormattedOutput DarkMode={DarkMode} aiText={text} />
       )}
     </>
   );

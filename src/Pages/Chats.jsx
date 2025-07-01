@@ -7,17 +7,16 @@ import { GoogleGenAI } from "@google/genai";
 const Chats = () => {
   const [DarkMode, SetDarkMode] = useState(true);
   const [Text, SetText] = useState("");
-  const [Response, SetResponse] = useState(`👋 Welcome to DevCore
-🚀 Your AI Coding Mentor – Learn Web Development & DSA from Scratch to Job-Ready!
-💬 Ask me anything in Hindi or English`);
   const [NewChat, SetNewChat] = useState(true);
   const [Loading, setLoading] = useState(false);
   const [Copy, SetCopy] = useState(true);
-
+  
   const ai = new GoogleGenAI({
     apiKey: " AIzaSyAvPlzZQs-pnNfYgjt5c6ynYpR-t-jERxE ",
   });
-
+  
+  const [Response, SetResponse] = useState(`👋 Welcome to DevCore
+🚀 Your AI Coding Mentor – Learn Web Development & DSA from Scratch.`);
   async function main() {
     setLoading(true);
     const response = await ai.models.generateContent({
@@ -74,8 +73,7 @@ Suggest simple projects or practice questions to try
 
   function newchat() {
     SetResponse(`New 👋 Welcome to DevCore
-🚀 Your AI Coding Mentor – Learn Web Development & DSA from Scratch to Job-Ready!
-💬 Ask me anything in Hindi or English`);
+🚀 Your AI Coding Mentor – Learn Web Development & DSA.`);
     SetText("");
     SetNewChat(false);
     setTimeout(() => SetNewChat(true), 1000); // 1s
