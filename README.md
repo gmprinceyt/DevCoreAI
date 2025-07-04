@@ -1,12 +1,35 @@
-# React + Vite
+# 🧠 Devcore – Your AI Coding Teacher
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Devcore is a personal AI-powered teacher built to guide self-learners in their journey to become software developers. Whether you're starting from scratch or switching careers, Devcore explains complex topics like programming, DSA, DBMS, OS, and more in a simple, beginner-friendly way — just like a real mentor.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Why Devcore?
 
-## Expanding the ESLint configuration
+Not everyone has access to a great teacher or a CS degree. Devcore fills that gap with:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 👨‍🏫 Easy-to-understand lessons  
+- 💬 Real conversation-style explanations  
+- 💡 Real-world examples and Hindi references (for deeper understanding)  
+- 🧪 Daily challenges and practice questions  
+- 📚 Personalized learning roadmap
+
+---
+
+## 🚀 Features
+
+- **📘 Concept Builder** – Learn programming, core CS, and system design in a structured flow  
+- **🛠 Project Guide** – Build real-world projects step-by-step with Devcore's help  
+- **📈 Interview Prep** – Practice DSA, mock interview Q&A, and system design questions  
+- **📊 Progress Tracker** *(Coming Soon)* – Track your learning path and daily habits  
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS  
+- **Backend**: Node.js, Express.js  
+- **AI Engine**: OpenAI API  
+- **Database**: MongoDB *(planned)*
+
+---
